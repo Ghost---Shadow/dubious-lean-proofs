@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Builds the library. Every clue (`#print axioms`, `#check`, ...) is wrapped in
+      # `#guard_msgs`, so the build fails if any example stops demonstrating its trick.
+      - uses: leanprover/lean-action@v1

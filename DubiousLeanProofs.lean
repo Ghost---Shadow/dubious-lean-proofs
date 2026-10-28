@@ -1,6 +1,22 @@
+-- Trusting something other than the kernel
+import DubiousLeanProofs.HiddenSorry
 import DubiousLeanProofs.InconsistentAxiom
-import DubiousLeanProofs.VacuousHypothesis
-import DubiousLeanProofs.JunkValues
-import DubiousLeanProofs.WrongDefinition
-import DubiousLeanProofs.NotationHijack
+import DubiousLeanProofs.AxiomInDisguise
 import DubiousLeanProofs.NativeDecide
+import DubiousLeanProofs.SkipKernel
+-- Proving a different statement than you think
+import DubiousLeanProofs.MisleadingName
+import DubiousLeanProofs.VacuousHypothesis
+import DubiousLeanProofs.UninhabitedType
+import DubiousLeanProofs.TrivialWitness
+import DubiousLeanProofs.WrongDefinition
+import DubiousLeanProofs.JunkValues
+import DubiousLeanProofs.NumeralDefaulting
+import DubiousLeanProofs.Overflow
+import DubiousLeanProofs.Precedence
+import DubiousLeanProofs.LawlessBEq
+-- Reading a different statement than Lean checks
+import DubiousLeanProofs.NotationHijack
+import DubiousLeanProofs.PrettyPrinterLies
+import DubiousLeanProofs.NameShadowing
+import DubiousLeanProofs.Homoglyph

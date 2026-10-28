@@ -23,6 +23,8 @@ theorem fermat_last_theorem :
 
 /-! How to catch it: ask Lean which axioms the proof depends on.
 The output lists `InconsistentAxiom.every_nat_has_pred`. -/
+/-- info: 'InconsistentAxiom.fermat_last_theorem' depends on axioms: [propext, every_nat_has_pred] -/
+#guard_msgs in
 #print axioms fermat_last_theorem
 
 end InconsistentAxiom

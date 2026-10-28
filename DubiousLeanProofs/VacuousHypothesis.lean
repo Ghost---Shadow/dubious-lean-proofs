@@ -26,6 +26,8 @@ theorem collatz_conjecture (n : Nat) (hpos : 0 < n) (hsmall : ∀ m, n ≤ m) :
 /-! `#print axioms` lists only the standard axioms
 (`propext`, `Classical.choice`, `Quot.sound`), so it will not save you.
 The only defence is reading the statement carefully. -/
+/-- info: 'VacuousHypothesis.collatz_conjecture' depends on axioms: [propext, Classical.choice, Quot.sound] -/
+#guard_msgs in
 #print axioms collatz_conjecture
 
 end VacuousHypothesis

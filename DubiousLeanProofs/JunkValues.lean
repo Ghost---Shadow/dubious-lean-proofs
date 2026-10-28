@@ -6,6 +6,7 @@ mathematical answer is undefined. For `Nat`:
 
 * `a - b = 0` whenever `b > a` (truncated subtraction)
 * `a / 0 = 0`
+* `l.head!` and `l[i]!` return `default` when out of range
 
 So statements that look absurd on paper are perfectly true in Lean, and
 statements that look obviously true can be false.
@@ -33,5 +34,11 @@ theorem div_self_fails : ¬ ∀ x : Nat, x / x = 1 := by
   intro h
   have := h 0
   simp at this
+
+/-- "The first element of the empty list is zero." `head!` returns `default`. -/
+theorem head_of_empty : ([] : List Nat).head! = 0 := by decide
+
+/-- "The tenth element of `[1, 2, 3]` is zero." -/
+theorem out_of_bounds : ([1, 2, 3] : List Nat)[10]! = 0 := by decide
 
 end JunkValues
