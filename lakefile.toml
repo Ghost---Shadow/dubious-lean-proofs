@@ -1,0 +1,5 @@
+name = "dubious-lean-proofs"
+defaultTargets = ["DubiousLeanProofs"]
+
+[[lean_lib]]
+name = "DubiousLeanProofs"
